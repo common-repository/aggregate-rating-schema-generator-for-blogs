@@ -1,0 +1,120 @@
+.strpgn-rating-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.strpgn-star-rating {
+    display: flex; /* Changed from 'none' to 'flex' to display rating stars initially */
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#thank-you-message {
+    color: #111111;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the message */
+    text-align: center; /* Center-align the text */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    display: none; /* Initially hidden, will be shown with JavaScript */
+    letter-spacing: 2.5px;
+    text-transform: capitalize;
+}
+
+.strpgn-rating-content {
+    display: flex;
+    align-items: center; /* Align items horizontally */
+}
+
+.strpgn-average-rating {
+    font-size: 4.7rem; /* Adjusted size */
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.strpgn-rating-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.strpgn-stars {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.strpgn-star {
+    color: #9d9d9d; /* Default grey color for empty stars */
+    font-size: 2.5rem; /* Adjusted size */
+    margin: 0 2px;
+    cursor: pointer;
+    transition: color 0.4s ease; /* Smooth transition for color change */
+}
+
+/* Add scale effect on click */
+.strpgn-star:active {
+    transform: scale(1.2); /* Scale up effect */
+}
+
+.strpgn-star-filled {
+    color: #26f553; /* Color for filled stars */
+}
+
+.strpgn-star-empty {
+    color: #9d9d9d; /* Color for empty stars */
+}
+
+.strpgn-star:hover {
+    color: #ffed25; /* Yellow color on hover */
+}
+
+.strpgn-total-ratings {
+    font-size: 16px;
+    color: #555;
+    margin-top: 4px;
+    padding-left: 22px;
+}
+
+#strpgn-message-container {
+    margin-bottom: 10px;
+}
+
+.strpgn-success-message, .strpgn-error-message {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.strpgn-success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.strpgn-error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.strpgn-star-rating {
+    display: none;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .strpgn-rating-container {
+        flex-direction: column;
+    }
+
+    .strpgn-average-rating {
+        font-size: 3rem;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .strpgn-star {
+        font-size: 2rem;
+    }
+}
